@@ -70,7 +70,7 @@ const renderScreenWithLayout = (Component) => ({ navigation, route }) =>
 
 const Navigation = () => {
   return (
-    <Stack.Navigator initialRouteName="Login">
+    <Stack.Navigator initialRouteName="Dashboard">
       {/* Screens without Header and Footer */}
       <Stack.Screen
         name="Login"

@@ -112,7 +112,7 @@
 // });
 
 // export default RegisterScreen;
-import React, { useState, useContext } from "react";
+import React, { useState ,useContext} from "react";
 import {
   View,
   Text,
@@ -124,12 +124,10 @@ import {
 } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { useTranslation } from "react-i18next";
-import { LanguageContext } from "../LanguageContext";
 import axios from "axios";
 
 const RegisterScreen = ({ navigation }) => {
   const { t } = useTranslation(); // For translations
-  const { language, changeLanguage } = useContext(LanguageContext); // Context for language
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
